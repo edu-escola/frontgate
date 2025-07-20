@@ -14,31 +14,31 @@ export const Footer = () => {
               <span className="text-xl font-bold">EduEscola</span>
             </div>
             <p className="text-white/70 leading-relaxed">
-              A plataforma completa para gestão escolar moderna. 
-              Simplifique processos e melhore resultados educacionais.
+              A plataforma completa para gestão escolar moderna. Simplifique
+              processos e melhore resultados educacionais.
             </p>
           </div>
 
           {/* Links */}
           <div>
-            <h4 className="font-semibold mb-4">Funcionalidades</h4>
+            {/* <h4 className="font-semibold mb-4">Funcionalidades</h4>
             <ul className="space-y-2 text-white/70">
               <li><a href="#" className="hover:text-white transition-colors">Gestão de Usuários</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Controle de Presença</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Sistema de Avaliações</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Relatórios</a></li>
-            </ul>
+            </ul> */}
           </div>
 
           {/* Support */}
           <div>
-            <h4 className="font-semibold mb-4">Suporte</h4>
+            {/* <h4 className="font-semibold mb-4">Suporte</h4>
             <ul className="space-y-2 text-white/70">
               <li><a href="#" className="hover:text-white transition-colors">Central de Ajuda</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Documentação</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Treinamentos</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Fale Conosco</a></li>
-            </ul>
+            </ul> */}
           </div>
 
           {/* Contact */}
@@ -62,7 +62,7 @@ export const Footer = () => {
         </div>
 
         <div className="border-t border-white/20 mt-12 pt-8 text-center text-white/60">
-          <p>&copy; 2024 EduEscola. Todos os direitos reservados.</p>
+          <p>&copy; 2025 EduEscola. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

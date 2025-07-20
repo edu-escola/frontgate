@@ -1,52 +1,56 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { 
-  Clock, 
-  TrendingUp, 
-  Shield, 
+import {
+  Clock,
+  TrendingUp,
+  Shield,
   Smartphone,
   CheckCircle,
-  ArrowRight
+  ArrowRight,
 } from "lucide-react";
 
 const benefits = [
   {
     icon: Clock,
     title: "Economia de Tempo",
-    description: "Automatize processos repetitivos e concentre-se no que realmente importa: o ensino de qualidade.",
+    description:
+      "Automatize processos repetitivos e concentre-se no que realmente importa: o ensino de qualidade.",
     stat: "70% menos tempo",
-    statLabel: "em tarefas administrativas"
+    statLabel: "em tarefas administrativas",
   },
   {
     icon: TrendingUp,
     title: "Melhores Resultados",
-    description: "Acompanhe o progresso em tempo real e tome decisões baseadas em dados concretos.",
+    description:
+      "Acompanhe o progresso em tempo real e tome decisões baseadas em dados concretos.",
     stat: "85% melhoria",
-    statLabel: "no acompanhamento acadêmico"
+    statLabel: "no acompanhamento acadêmico",
   },
   {
     icon: Shield,
     title: "Segurança Total",
-    description: "Proteção de dados avançada e controle de acesso personalizado para cada usuário.",
+    description:
+      "Proteção de dados avançada e controle de acesso personalizado para cada usuário.",
     stat: "100% seguro",
-    statLabel: "dados protegidos"
+    statLabel: "dados protegidos",
   },
   {
     icon: Smartphone,
     title: "Acesso Anywhere",
-    description: "Interface responsiva que funciona perfeitamente em qualquer dispositivo, a qualquer hora.",
+    description:
+      "Interface responsiva que funciona perfeitamente em qualquer dispositivo, a qualquer hora.",
     stat: "24/7 disponível",
-    statLabel: "em todos os dispositivos"
-  }
+    statLabel: "em todos os dispositivos",
+  },
 ];
 
 const achievements = [
   "Gestão completa de usuários e permissões",
-  "Relatórios automáticos e personalizáveis", 
+  "Relatórios automáticos e personalizáveis",
   "Interface intuitiva e fácil de usar",
   "Suporte técnico especializado",
   "Atualizações constantes e melhorias",
-  "Integração com sistemas existentes"
+  "Integração com sistemas existentes",
 ];
 
 export const BenefitsSection = () => {
@@ -60,14 +64,15 @@ export const BenefitsSection = () => {
               Por que Escolher o EduEscola?
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Benefícios comprovados que transformam a gestão educacional da sua instituição.
+              Benefícios comprovados que transformam a gestão educacional da sua
+              instituição.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {benefits.map((benefit, index) => (
-              <Card 
-                key={index} 
+              <Card
+                key={index}
                 className="group text-center hover:shadow-medium transition-all duration-300 hover:-translate-y-2 bg-background border-0"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
@@ -75,12 +80,16 @@ export const BenefitsSection = () => {
                   <div className="mb-4 mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                     <benefit.icon className="w-8 h-8 text-primary" />
                   </div>
-                  
+
                   <div className="mb-3">
-                    <div className="text-2xl font-bold text-primary">{benefit.stat}</div>
-                    <div className="text-sm text-muted-foreground">{benefit.statLabel}</div>
+                    <div className="text-2xl font-bold text-primary">
+                      {benefit.stat}
+                    </div>
+                    <div className="text-sm text-muted-foreground">
+                      {benefit.statLabel}
+                    </div>
                   </div>
-                  
+
                   <h3 className="text-lg font-semibold text-card-foreground mb-2">
                     {benefit.title}
                   </h3>
@@ -117,14 +126,26 @@ export const BenefitsSection = () => {
                 Pronto para Transformar sua Escola?
               </h4>
               <p className="text-muted-foreground mb-6">
-                Junte-se a centenas de instituições que já revolucionaram sua gestão educacional com o EduEscola.
+                Junte-se a centenas de instituições que já revolucionaram sua
+                gestão educacional com o EduEscola.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
-                <Button variant="hero" size="lg" className="group flex-1">
+                {/* <Button variant="hero" size="lg" className="group flex-1">
                   Começar Gratuitamente
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Button>
-                <Button variant="outline" size="lg" className="flex-1">
+                </Button> */}
+                <Button
+                  variant="hero"
+                  size="lg"
+                  className="flex-1"
+                  onClick={() => {
+                    const message = encodeURIComponent(
+                      "Olá! Gostaria de agendar uma demonstração do EduEscola."
+                    );
+                    const whatsappUrl = `https://wa.me/5511999999999?text=${message}`;
+                    window.open(whatsappUrl, "_blank");
+                  }}
+                >
                   Falar com Especialista
                 </Button>
               </div>
