@@ -20,26 +20,27 @@ export const Footer = () => {
           </div>
 
           {/* Links */}
-          {/* <div>
-            <h4 className="font-semibold mb-4">Funcionalidades</h4>
+          <div>
+            {/* <h4 className="font-semibold mb-4">Funcionalidades</h4>
             <ul className="space-y-2 text-white/70">
               <li><a href="#" className="hover:text-white transition-colors">Gestão de Usuários</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Controle de Presença</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Sistema de Avaliações</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Relatórios</a></li>
-            </ul>
-          </div> */}
+            </ul> */}
+          </div>
 
           {/* Support */}
-          {/* <div>
-            <h4 className="font-semibold mb-4">Suporte</h4>
+          <div>
+            {/* <h4 className="font-semibold mb-4">Suporte</h4>
             <ul className="space-y-2 text-white/70">
               <li><a href="#" className="hover:text-white transition-colors">Central de Ajuda</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Documentação</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Treinamentos</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Fale Conosco</a></li>
-            </ul>
-          </div> */}
+            </ul> */}
+          </div>
+
 
           {/* Contact */}
           <div>
