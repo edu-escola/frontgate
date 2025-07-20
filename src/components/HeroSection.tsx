@@ -8,9 +8,12 @@ export const HeroSection = () => {
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-white rounded-full animate-float"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-white rounded-full animate-float" style={{animationDelay: '2s'}}></div>
+        <div
+          className="absolute bottom-1/4 right-1/4 w-48 h-48 bg-white rounded-full animate-float"
+          style={{ animationDelay: "2s" }}
+        ></div>
       </div>
-      
+
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left column - Content */}
@@ -18,13 +21,17 @@ export const HeroSection = () => {
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
                 EduEscola
-                <span className="block text-primary-glow">Gestão Escolar Inteligente</span>
+                <span className="block text-primary-glow">
+                  Gestão Escolar Inteligente
+                </span>
               </h1>
               <p className="text-xl md:text-2xl text-white/80 max-w-2xl">
-                Simplifique a administração escolar com nossa plataforma completa para gestão de turmas, presença, avaliações e relatórios.
+                Simplifique a administração escolar com nossa plataforma
+                completa para gestão de turmas, presença, avaliações e
+                relatórios.
               </p>
             </div>
-            
+
             {/* Stats */}
             <div className="flex flex-wrap gap-6 text-white">
               <div className="flex items-center gap-2">
@@ -43,28 +50,46 @@ export const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="xl" className="group">
-                Começar Agora
+              <Button
+                variant="hero"
+                size="xl"
+                className="group"
+                onClick={() => {
+                  const message = encodeURIComponent(
+                    "Olá! Gostaria de agendar uma demonstração do EduEscola."
+                  );
+                  const whatsappUrl = `https://wa.me/5511999999999?text=${message}`;
+                  window.open(whatsappUrl, "_blank");
+                }}
+              >
+                Agendar Demonstração
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button variant="outline" size="xl" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
+              {/* <Button variant="hero" size="xl" className="group">
+                Começar Agora
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </Button> */}
+              {/* <Button variant="outline" size="xl" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
                 Saiba Mais
-              </Button>
+              </Button> */}
             </div>
           </div>
 
           {/* Right column - Image */}
           <div className="relative animate-scale-in">
             <div className="relative z-10">
-              <img 
-                src={heroImage} 
-                alt="EduEscola - Plataforma educacional moderna" 
+              <img
+                src={heroImage}
+                alt="EduEscola - Plataforma educacional moderna"
                 className="w-full h-auto rounded-2xl shadow-strong"
               />
             </div>
             {/* Floating decoration */}
             <div className="absolute -top-4 -right-4 w-24 h-24 bg-accent rounded-full opacity-80 animate-float"></div>
-            <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-primary-glow rounded-full opacity-60 animate-float" style={{animationDelay: '1s'}}></div>
+            <div
+              className="absolute -bottom-4 -left-4 w-16 h-16 bg-primary-glow rounded-full opacity-60 animate-float"
+              style={{ animationDelay: "1s" }}
+            ></div>
           </div>
         </div>
       </div>
