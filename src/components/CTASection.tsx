@@ -7,8 +7,14 @@ export const CTASection = () => {
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-1/3 left-1/5 w-32 h-32 bg-white rounded-full animate-float"></div>
-        <div className="absolute bottom-1/3 right-1/5 w-24 h-24 bg-white rounded-full animate-float" style={{animationDelay: '1.5s'}}></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-white rounded-full animate-float" style={{animationDelay: '3s'}}></div>
+        <div
+          className="absolute bottom-1/3 right-1/5 w-24 h-24 bg-white rounded-full animate-float"
+          style={{ animationDelay: "1.5s" }}
+        ></div>
+        <div
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-white rounded-full animate-float"
+          style={{ animationDelay: "3s" }}
+        ></div>
       </div>
 
       <div className="container mx-auto px-4 text-center relative z-10">
@@ -17,10 +23,10 @@ export const CTASection = () => {
             Revolucione a Gestão da Sua Escola
             <span className="block text-primary-glow">Começe Hoje Mesmo!</span>
           </h2>
-          
+
           <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
-            Simplifique processos, economize tempo e melhore resultados. 
-            O EduEscola é a solução completa que sua instituição precisa.
+            Simplifique processos, economize tempo e melhore resultados. O
+            EduEscola é a solução completa que sua instituição precisa.
           </p>
 
           {/* CTA Buttons */}
@@ -29,7 +35,18 @@ export const CTASection = () => {
               Começar Gratuitamente
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button> */}
-            <Button variant="hero" size="xl" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
+            <Button
+              variant="hero"
+              size="xl"
+              className="bg-white/10 border-white/20 text-white hover:bg-white/20"
+              onClick={() => {
+                const message = encodeURIComponent(
+                  "Olá! Gostaria de agendar uma demonstração do EduEscola."
+                );
+                const whatsappUrl = `https://wa.me/5511999999999?text=${message}`;
+                window.open(whatsappUrl, "_blank");
+              }}
+            >
               Agendar Demonstração
             </Button>
           </div>

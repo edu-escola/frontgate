@@ -14,8 +14,8 @@ export const Footer = () => {
               <span className="text-xl font-bold">EduEscola</span>
             </div>
             <p className="text-white/70 leading-relaxed">
-              A plataforma completa para gestão escolar moderna. 
-              Simplifique processos e melhore resultados educacionais.
+              A plataforma completa para gestão escolar moderna. Simplifique
+              processos e melhore resultados educacionais.
             </p>
           </div>
 
@@ -40,7 +40,6 @@ export const Footer = () => {
               <li><a href="#" className="hover:text-white transition-colors">Fale Conosco</a></li>
             </ul> */}
           </div>
-
 
           {/* Contact */}
           <div>
