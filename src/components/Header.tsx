@@ -35,12 +35,12 @@ export const Header = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-3">
-            <Button variant="ghost">
+            <Button variant="default" onClick={() => window.open('https://app.eduescola.com.br', '_blank')}>
               Entrar
             </Button>
-            <Button variant="default">
+            {/* <Button variant="default">
               Começar Grátis
-            </Button>
+            </Button> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -73,12 +73,12 @@ export const Header = () => {
                 Benefícios
               </a>
               <div className="flex flex-col gap-2 pt-4 border-t border-border">
-                <Button variant="ghost" className="justify-start">
+                <Button variant="default" className="justify-start" onClick={() => window.open('https://app.eduescola.com.br', '_blank')}>
                   Entrar
                 </Button>
-                <Button variant="default" className="justify-start">
+                {/* <Button variant="default" className="justify-start">
                   Começar Grátis
-                </Button>
+                </Button> */}
               </div>
             </nav>
           </div>

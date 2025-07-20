@@ -120,11 +120,11 @@ export const BenefitsSection = () => {
                 Junte-se a centenas de instituições que já revolucionaram sua gestão educacional com o EduEscola.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
-                <Button variant="hero" size="lg" className="group flex-1">
+                {/* <Button variant="hero" size="lg" className="group flex-1">
                   Começar Gratuitamente
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </Button>
-                <Button variant="outline" size="lg" className="flex-1">
+                </Button> */}
+                <Button variant="hero" size="lg" className="flex-1">
                   Falar com Especialista
                 </Button>
               </div>

@@ -25,11 +25,11 @@ export const CTASection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button variant="hero" size="xl" className="group bg-white text-primary hover:bg-white/90">
+            {/* <Button variant="hero" size="xl" className="group bg-white text-primary hover:bg-white/90">
               Começar Gratuitamente
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button variant="outline" size="xl" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
+            </Button> */}
+            <Button variant="hero" size="xl" className="bg-white/10 border-white/20 text-white hover:bg-white/20">
               Agendar Demonstração
             </Button>
           </div>
@@ -48,9 +48,9 @@ export const CTASection = () => {
 
           {/* Trust indicators */}
           <div className="mt-12 pt-8 border-t border-white/20">
-            <p className="text-white/60 text-sm mb-4">Confiado por mais de 500+ escolas em todo o Brasil</p>
+            {/* <p className="text-white/60 text-sm mb-4">Confiado por mais de 500+ escolas em todo o Brasil</p> */}
             <div className="flex justify-center items-center gap-8 text-white/40 text-xs">
-              <span>✓ Suporte 24/7</span>
+              <span>✓ Suporte Dedicado</span>
               <span>✓ Dados Seguros</span>
               <span>✓ Interface Intuitiva</span>
               <span>✓ Sem Limitações</span>

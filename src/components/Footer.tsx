@@ -20,7 +20,7 @@ export const Footer = () => {
           </div>
 
           {/* Links */}
-          <div>
+          {/* <div>
             <h4 className="font-semibold mb-4">Funcionalidades</h4>
             <ul className="space-y-2 text-white/70">
               <li><a href="#" className="hover:text-white transition-colors">Gestão de Usuários</a></li>
@@ -28,10 +28,10 @@ export const Footer = () => {
               <li><a href="#" className="hover:text-white transition-colors">Sistema de Avaliações</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Relatórios</a></li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Support */}
-          <div>
+          {/* <div>
             <h4 className="font-semibold mb-4">Suporte</h4>
             <ul className="space-y-2 text-white/70">
               <li><a href="#" className="hover:text-white transition-colors">Central de Ajuda</a></li>
@@ -39,7 +39,7 @@ export const Footer = () => {
               <li><a href="#" className="hover:text-white transition-colors">Treinamentos</a></li>
               <li><a href="#" className="hover:text-white transition-colors">Fale Conosco</a></li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact */}
           <div>
@@ -62,7 +62,7 @@ export const Footer = () => {
         </div>
 
         <div className="border-t border-white/20 mt-12 pt-8 text-center text-white/60">
-          <p>&copy; 2024 EduEscola. Todos os direitos reservados.</p>
+          <p>&copy; 2025 EduEscola. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
