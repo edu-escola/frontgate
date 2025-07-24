@@ -47,15 +47,15 @@ export const Footer = () => {
             <div className="space-y-3 text-white/70">
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" />
-                <span>contato@eduescola.com</span>
+                <span>contato@eduescola.com.br</span>
               </div>
-              <div className="flex items-center gap-2">
+              {/* <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4" />
                 <span>(11) 9999-9999</span>
-              </div>
+              </div> */}
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
-                <span>São Paulo, SP - Brasil</span>
+                <span>Araras, SP - Brasil</span>
               </div>
             </div>
           </div>

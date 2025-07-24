@@ -40,11 +40,14 @@ export const CTASection = () => {
               size="xl"
               className="bg-white/10 border-white/20 text-white hover:bg-white/20"
               onClick={() => {
-                const message = encodeURIComponent(
-                  "Olá! Gostaria de agendar uma demonstração do EduEscola."
+                const subject = encodeURIComponent(
+                  "Agendamento de Demonstração - EduEscola"
                 );
-                const whatsappUrl = `https://wa.me/5511999999999?text=${message}`;
-                window.open(whatsappUrl, "_blank");
+                const body = encodeURIComponent(
+                  "Olá!\n\nGostaria de agendar uma demonstração do EduEscola.\n\nPor favor, me informe:\n- Data e horário preferidos\n- Nome da instituição\n- Número de alunos\n\nAguardo seu retorno.\n\nAtenciosamente,\n[Seu nome]"
+                );
+                const emailUrl = `mailto:contato@eduescola.com.br?subject=${subject}&body=${body}`;
+                window.open(emailUrl);
               }}
             >
               Agendar Demonstração
@@ -55,12 +58,12 @@ export const CTASection = () => {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center text-white/80">
             <div className="flex items-center gap-2">
               <Mail className="w-5 h-5" />
-              <span>contato@eduescola.com</span>
+              <span>contato@eduescola.com.br</span>
             </div>
-            <div className="flex items-center gap-2">
+            {/* <div className="flex items-center gap-2">
               <Phone className="w-5 h-5" />
               <span>(11) 9999-9999</span>
-            </div>
+            </div> */}
           </div>
 
           {/* Trust indicators */}

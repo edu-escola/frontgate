@@ -139,11 +139,14 @@ export const BenefitsSection = () => {
                   size="lg"
                   className="flex-1"
                   onClick={() => {
-                    const message = encodeURIComponent(
-                      "Olá! Gostaria de agendar uma demonstração do EduEscola."
+                    const subject = encodeURIComponent(
+                      "Agendamento de Demonstração - EduEscola"
                     );
-                    const whatsappUrl = `https://wa.me/5511999999999?text=${message}`;
-                    window.open(whatsappUrl, "_blank");
+                    const body = encodeURIComponent(
+                      "Olá!\n\nGostaria de agendar uma demonstração do EduEscola.\n\nPor favor, me informe:\n- Data e horário preferidos\n- Nome da instituição\n- Número de alunos\n\nAguardo seu retorno.\n\nAtenciosamente,\n[Seu nome]"
+                    );
+                    const emailUrl = `mailto:contato@eduescola.com.br?subject=${subject}&body=${body}`;
+                    window.open(emailUrl);
                   }}
                 >
                   Falar com Especialista
